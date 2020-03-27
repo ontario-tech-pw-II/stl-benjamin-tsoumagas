@@ -121,8 +121,23 @@ int main()
 {  
 
 	// Write your code for Task 1
+    list<Student> c;
+    Student s1("John", 86);
+    Student s2("Ben", 80);
+    Student s3("Sam", 90);
+
+    list<Student>::iterator i;
+
+    i = c.begin();
+
+    c.push_back(s1);
+    c.push_back(s2);
+    c.push_back(s3);
+    
+    for (i = c.begin(); i != c.end(); i++){
+        cout << *i << endl;
+    }
+
+    //cout << c.size() << endl;
 		
 }
-
-
-
